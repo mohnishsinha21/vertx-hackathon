@@ -1,0 +1,43 @@
+Problem Statement: High-Performance File Upload and Download Service
+Background:
+With the increasing demand for cloud storage and file synchronization services, designing a high-performance system capable of handling multiple client requests simultaneously is crucial. The challenge lies in building a scalable server that can manage a large number of persistent client connections independently, while efficiently handling file transfers.
+
+Challenge:
+Your task is to create a scalable TCP server using Vert.x and Netty to provide an efficient file upload and download service. Each client connection should be handled independently, ensuring that thousands of clients can upload or download files concurrently with high reliability and low latency.
+
+Requirements:
+
+Server-Side:
+
+Develop a TCP server using both Vert.x and Netty capable of maintaining multiple persistent connections with clients.
+Ensure the server can handle thousands of concurrent connections efficiently, with each connection being independent from the others.
+Implement features for clients to upload files to the server and download files from the server.
+Implement mechanisms for error handling, ensuring robust connections that can recover gracefully from common network issues.
+Client-Side:
+
+Create a simple client application that can connect to the server, upload files, and download files.
+The client should establish a persistent TCP connection with the server for each file transfer.
+Incorporate a user-friendly interface to select files for upload and specify files for download.
+Data Security:
+
+Ensure data integrity and optionally implement encryption for file transfers (e.g., using SSL/TLS).
+Scalability and Resource Management:
+
+Design the system to efficiently manage server resources under high load scenarios.
+Provide insights into the server's performance under load through monitoring and metrics.
+Deployment Documentation:
+
+Include clear instructions and scripts for deploying the server in a cloud environment or on-premises.
+Evaluation Criteria:
+
+Performance: Ability to handle numerous simultaneous file transfers with minimal delay and maximum reliability.
+Scalability: Effective handling of increasing client connections and data throughput.
+Robustness: Stability and resilience of the server under high load conditions.
+User Experience: Simplicity and effectiveness of the client application interface for file management tasks.
+Bonus Challenges:
+
+Implement functionality for resuming interrupted file transfers.
+Provide detailed logging and analytics on file transfer activity.
+Include support for varying file sizes and types, demonstrating versatility in handling diverse data.
+Tools and Libraries:
+Participants should make use of Vert.x, Netty, and any additional Java libraries necessary to enhance performance and security. Success in this challenge will require proficiency in managing asynchronous I/O, optimizing server architecture, and ensuring secure and reliable data handling.
