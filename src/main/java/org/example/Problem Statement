@@ -1,0 +1,19 @@
+
+1. In modern applications, maintaining persistent connections with clients is essential for real-time communication, file transfers, and continuous data streaming.
+   Your challenge is to develop a TCP server using Vert.x that can handle multiple client connections simultaneously, ensuring each connection remains persistent while
+   efficiently managing data flow between the server and its clients.
+
+   Requirement:
+   - Create a robust TCP server that accepts connections from multiple clients, supports persistent connections, and facilitates bidirectional data exchange.
+   - Develop a TCP server that can accept multiple simultaneous client connections using Vert.x NetServer. Each connected client should have its connection state managed independently.
+
+2. In today's interconnected world, servers need to handle multiple clients efficiently and scalably.
+   Your challenge is to develop an enhanced version of a TCP server that can manage numerous client connections, each with its own processing logic.
+   Create a robust TCP server using Vert.x that processes multiple client connections concurrently.
+   Each client connection should have its own "processing verticle" to handle communication independently.
+   Also, the server should dispatch events to each client at precisely the time specified by the clients.
+
+   Requirements
+   Connection Handling:
+   Implement a mechanism to manage connections using NetSocket in Vert.x.
+   Ensure each connection spawns a dedicated verticle (ChildVerticle) for handling client-specific tasks, such as message processing and response.
